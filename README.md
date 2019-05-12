@@ -1,6 +1,16 @@
 # tmux-plugin-cpu
 tmux plugin showing CPU usage
 
+Requirements
+------------
+
+This plugin requires `mpstat` program. It can be installed with `sysstat` package.
+On Debian/Ubuntu, you can install it as follows:
+
+```
+sudo apt-get install sysstat
+```
+
 Installation
 ------------
 ### Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (recommended)
