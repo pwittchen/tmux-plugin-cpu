@@ -11,6 +11,12 @@ On Debian/Ubuntu, you can install it as follows:
 sudo apt-get install sysstat
 ```
 
+or
+
+```
+pacman -S sysstat
+```
+
 Installation
 ------------
 ### Installation with [Tmux Plugin Manager](https://github.com/tmux-plugins/tpm) (recommended)
@@ -25,6 +31,11 @@ Hit `prefix + I` to fetch the plugin and source it.
 
 If format strings are added to `status-right`, they should now be visible.
 
+Customization
+-------------
+
+Please note, script used in this plugin may behave differently on different computers. In case you get wrong results, cusomize manually variable here: https://github.com/pwittchen/tmux-plugin-cpu/blob/master/scripts/cpu.sh#L9 . Sometimes it may be `$12`, sometimes `$13` depending on `mpstat` output on your comuputer. Please, customize it according to your setup.
+ 
 Usage
 -----
 
