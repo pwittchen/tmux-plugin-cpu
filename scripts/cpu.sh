@@ -6,7 +6,7 @@ source "$CURRENT_DIR/helpers.sh"
 
 print_cpu_usage() {
   if is_linux; then
-    mpstat | awk '$13 ~ /[0-9.]+/ { print 100 - $13"%" }'
+    mpstat | awk '$12 ~ /[0-9.]+/ { print 100 - $12"%" }'
   elif is_osx; then
     ps -A -o %cpu | awk '{s+=$1} END {print s "%"}'
   fi
